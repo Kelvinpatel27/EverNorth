@@ -97,10 +97,11 @@
 //   );
 // }
 
-
+const BACKEND_URL = import.meta.env.VITE_Backend_URL;
+console.log("Backend URL:", BACKEND_URL);
 
 export async function getAIResponse(userMessage: string): Promise<string> {
-  const response = await fetch("http://localhost:8000/chat", {
+  const response = await fetch(`${BACKEND_URL}/chat`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
