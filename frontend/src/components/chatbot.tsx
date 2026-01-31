@@ -269,7 +269,7 @@ export default function Chatbot() {
       {/* Chatbot Panel */}
       <div
       
-        className={`fixed bottom-24 right-6 w-96 h-[600px] bg-white rounded-xl shadow-2xl flex flex-col
+        className={`fixed bottom-24 right-6 w-96 h-96 bg-white rounded-xl shadow-2xl flex flex-col
         transform transition-all duration-300 ease-out z-[9999]
         ${open ? "scale-100 opacity-100" : "scale-90 opacity-0 pointer-events-none"}`}
       >
