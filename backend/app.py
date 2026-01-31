@@ -19,7 +19,7 @@ app = FastAPI(title="AI Medical Chatbot API")
 # ✅ CORS (allow frontend)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[os.getenv("FrontEnd_URL")],  # for development
+    allow_origins=["*"],  # for development
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
